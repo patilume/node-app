@@ -1,5 +1,5 @@
 #!/bin/sh
-ssh -T ec2-user@172.31.37.105 <<EOF
+ssh -t ec2-user@172.31.37.105 <<EOF
  cd /node-app
  git pull
  npm install --production
